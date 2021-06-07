@@ -7,17 +7,18 @@ export class Book extends Model<Book>{
       type: DataType.STRING(60),
       allowNull: false,
    })
-   codigo: string;
+   code: string;
 
    @Column({
       type: DataType.STRING,
       allowNull: false,
    })
-   nome: string;
+   name: string;
+   
    @Column({
       type: DataType.DECIMAL(10, 2),
       allowNull: false,
    })
-   preco: number;
+   price: number;
 
 }
